@@ -17,7 +17,6 @@ while True :
       m = client.recv(1024).decode()
       s='CLOSE SOCKET'
       if (m==s):
-          print('sorry')
           client.close()
       else:
           m= m.upper()
